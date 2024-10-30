@@ -1,11 +1,11 @@
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'About site',
+  title: 'projects',
 };
 
 function Page() {
-  return <div>ABOUT SITE</div>;
+  return <div>PROJECTS</div>;
 }
 
 export default Page;
