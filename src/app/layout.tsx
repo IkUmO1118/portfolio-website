@@ -1,6 +1,19 @@
 import type { Metadata } from "next";
-import { Inter, Roboto_Condensed } from "next/font/google";
-export const roboto = Roboto_Condensed({
+import {
+  Inter,
+  Roboto_Condensed,
+  Roboto_Slab,
+  Source_Sans_3,
+} from "next/font/google";
+export const robotoCondensed = Roboto_Condensed({
+  subsets: ["latin"],
+  display: "swap",
+});
+export const robotoSlab = Roboto_Slab({
+  subsets: ["latin"],
+  display: "swap",
+});
+export const sourceSans = Source_Sans_3({
   subsets: ["latin"],
   display: "swap",
 });
@@ -10,9 +23,9 @@ const inter = Inter({
 });
 
 import "./../_style/globals.css";
-import Header from "@/_components/Header";
+import Header from "../_components/Header";
 import Footer from "../_components/Footer";
-import DotPattern from "@/components/ui/dot-pattern";
+import DotPattern from "../components/ui/dot-pattern";
 
 export const metadata: Metadata = {
   title: {
@@ -23,7 +36,7 @@ export const metadata: Metadata = {
     "This is the 19mod portfolio website, showcasing past projects, skills, and experience as a software engineer. A downloadable PDF version of the resume is also available.",
 };
 
-export default function RootLayout({
+function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
@@ -41,3 +54,5 @@ export default function RootLayout({
     </html>
   );
 }
+
+export default RootLayout;

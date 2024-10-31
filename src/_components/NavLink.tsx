@@ -1,9 +1,11 @@
-import { roboto } from "@/app/layout";
 import Link from "next/link";
+import { robotoCondensed } from "../app/layout";
 
 function NavLink() {
   return (
-    <nav className={`${roboto.className} text-sm text-neutral-400`}>
+    <nav
+      className={`${robotoCondensed.className} z-10 text-sm text-neutral-400`}
+    >
       <ul className="flex gap-4">
         <li>
           <Link href="/">Home</Link>
