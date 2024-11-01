@@ -1,10 +1,5 @@
-import { GoPencil } from "react-icons/go";
-import { FaLaptopCode } from "react-icons/fa6";
-import { LuFileCode2 } from "react-icons/lu";
-import { IoSettingsOutline } from "react-icons/io5";
-
 import { sourceSans } from "@/src/app/layout";
-import AboutCard from "./AboutCard";
+import AboutContents from "./AboutContents";
 
 function AboutContainer() {
   return (
@@ -16,23 +11,7 @@ function AboutContainer() {
           About Site
         </h1>
       </section>
-      <section className="mt-16 flex w-full justify-center gap-4">
-        <AboutCard type="UI&ensp;&&ensp;UX" skills={["Figma", "Dribbble"]}>
-          <GoPencil className="h-7 w-7 justify-self-center text-neutral-400" />
-        </AboutCard>
-        <AboutCard
-          type="Frontend"
-          skills={["Next.js", "Tailwind&ensp;CSS", "TypeScript"]}
-        >
-          <FaLaptopCode className="h-7 w-7 justify-self-center text-neutral-400" />
-        </AboutCard>
-        <AboutCard type="Code&ensp;Management" skills={["Git", "GitHub"]}>
-          <LuFileCode2 className="h-7 w-7 justify-self-center text-neutral-400" />
-        </AboutCard>
-        <AboutCard type="Infrastructure" skills={["AWS", "NGINX"]}>
-          <IoSettingsOutline className="h-7 w-7 justify-self-center text-neutral-400" />
-        </AboutCard>
-      </section>
+      <AboutContents />
     </div>
   );
 }
