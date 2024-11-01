@@ -2,7 +2,7 @@ import ProjectsContainer from "@/src/features/projects/ProjectsContainer";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "projects",
+  title: "19mod | projects",
 };
 
 function Page() {

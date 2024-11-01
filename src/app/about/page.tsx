@@ -1,9 +1,9 @@
 import AboutContainer from "@/src/features/about/AboutContainer";
-// import { Metadata } from "next";
+import { Metadata } from "next";
 
-// export const metadata: Metadata = {
-//   title: "About site",
-// };
+export const metadata: Metadata = {
+  title: "19mod | About site",
+};
 
 function Page() {
   return <AboutContainer />;
