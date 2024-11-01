@@ -8,15 +8,21 @@ function NavLink() {
     >
       <ul className="flex gap-4">
         <li>
-          <Link href="/">Home</Link>
+          <Link href="/" className="hover:underline">
+            Home
+          </Link>
         </li>
         &frasl;
         <li>
-          <Link href="/resume">Resume</Link>
+          <Link href="/resume" className="hover:underline">
+            Resume
+          </Link>
         </li>
         &frasl;
         <li>
-          <Link href="/projects">Projects</Link>
+          <Link href="/projects" className="hover:underline">
+            Projects
+          </Link>
         </li>
         &frasl;
         <li>
@@ -24,6 +30,7 @@ function NavLink() {
             href="https://github.com/IkUmO1118"
             target="_blank"
             rel="noopener noreferrer"
+            className="hover:underline"
           >
             GitHub
           </a>

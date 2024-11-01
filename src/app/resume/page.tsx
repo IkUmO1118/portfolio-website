@@ -1,5 +1,7 @@
+import ResumeContainer from "@/src/features/resume/ResumeContainer";
+
 function page() {
-  return <div>RESUME</div>;
+  return <ResumeContainer />;
 }
 
 export default page;

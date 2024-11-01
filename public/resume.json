@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "type": "education",
+    "duration": "2021 - 2025",
+    "title": "Nihon University",
+    "description": "Faculty of Science and Engineering, Department of Architecture"
+  },
+  {
+    "id": 2,
+    "type": "education",
+    "duration": "2021",
+    "title": "Progate",
+    "description": "Studied HTML, CSS Ruby, Ruby on Rails, etc."
+  },
+  {
+    "id": 3,
+    "type": "education",
+    "duration": "2023 - present",
+    "title": "Udemy",
+    "description": "Studied HTML, CSS, JavaScript, Node.js, express, React, Next.js, Typescript, Python, Docker, AWS, etc."
+  },
+  {
+    "id": 4,
+    "type": "experiece",
+    "duration": "2024 - present",
+    "title": "Laboratory Animal Facility Performance Diagnostic Tool",
+    "description": "I've been asked by a professor in my lab to create this."
+  },
+  {
+    "id": 5,
+    "type": "education",
+    "duration": "2024 - present",
+    "title": "Recursion",
+    "description": "Knowledge of computer science (data structures and algorithms), SQL, software engineering, design patterns, and operating systems"
+  }
+]

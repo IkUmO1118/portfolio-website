@@ -35,16 +35,18 @@ const iconMap = {
 };
 
 import ExportedImage from "next-image-export-optimizer";
-import { robotoCondensed, robotoSlab } from "../app/layout";
-import Button from "./Button";
-import { ProjectProps } from "../utils/helper";
+import { robotoCondensed, robotoSlab } from "../../app/layout";
+import Button from "../../_components/Button";
+import { ProjectProps } from "../../utils/helper";
 
 type Skill = keyof typeof iconMap;
 
 function SelectedProjectCard({ project }: { project: ProjectProps }) {
+  const isOdd: boolean = project.id % 2 === 0;
+
   return (
     <div className="z-10 h-96 w-full border border-neutral-700 bg-neutral-900">
-      {project.id % 2 !== 0 ? (
+      {!isOdd ? (
         <div className="grid h-full grid-cols-[5fr_4fr] gap-10 bg-neutral-800/20 px-8 pt-12">
           <div className="relative h-full w-full">
             <ExportedImage
@@ -53,7 +55,7 @@ function SelectedProjectCard({ project }: { project: ProjectProps }) {
               sizes="100vw"
               unoptimized={true}
               alt={project.summary}
-              className="border-x border-t border-neutral-800 object-cover object-top opacity-80"
+              className="border-x border-t border-neutral-800 object-cover object-top opacity-90"
             />
           </div>
           <div className="flex flex-col justify-between pb-6 pr-8">
@@ -69,7 +71,7 @@ function SelectedProjectCard({ project }: { project: ProjectProps }) {
             </div>
             <div className="flex flex-col gap-4">
               <p className="text-sm text-neutral-400">{project.summary}</p>
-              <Button>
+              <Button href={project.githubURL}>
                 <p
                   className={`${robotoCondensed.className} text-sm text-neutral-400`}
                 >
@@ -94,7 +96,7 @@ function SelectedProjectCard({ project }: { project: ProjectProps }) {
             </div>
             <div className="flex flex-col gap-4">
               <p className="text-sm text-neutral-400">{project.summary}</p>
-              <Button>
+              <Button href={project.githubURL}>
                 <p
                   className={`${robotoCondensed.className} text-sm text-neutral-400`}
                 >
@@ -109,7 +111,7 @@ function SelectedProjectCard({ project }: { project: ProjectProps }) {
               fill
               unoptimized={true}
               alt={project.summary}
-              className="border-x border-t border-neutral-800 object-cover object-top opacity-80"
+              className="border-x border-t border-neutral-800 object-cover object-top opacity-90"
             />
           </div>
         </div>

@@ -1,7 +1,7 @@
 "use client";
 import { useEffect, useState } from "react";
 import SelectedProjectCard from "./SelectedProjectCard";
-import { ProjectProps } from "../utils/helper";
+import { ProjectProps } from "../../utils/helper";
 
 function SelectedProjects() {
   const [projects, setProjects] = useState<ProjectProps[]>([]);
@@ -10,7 +10,6 @@ function SelectedProjects() {
     fetch("/portfolio.json")
       .then((response) => response.json())
       .then((data: ProjectProps[]) => setProjects(data));
-    // .then((data: ProjectProps) => setProjects([...projects, data]));
   }, []);
 
   return (

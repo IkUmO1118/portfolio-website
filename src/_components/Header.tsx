@@ -6,7 +6,7 @@ function Header() {
   return (
     <header className="flex items-center justify-between border-b border-neutral-800">
       <div className="flex items-center gap-4">
-        <Link href="about-site" className="z-10 text-xs text-neutral-400">
+        <Link href="/about" className="z-10 text-xs text-neutral-400">
           Ikumo Takahashi
         </Link>
         <button

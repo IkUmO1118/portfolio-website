@@ -1,4 +1,3 @@
-// import type { Metadata } from "next";
 import {
   Inter,
   Roboto_Condensed,
@@ -27,16 +26,6 @@ import Header from "../_components/Header";
 import Footer from "../_components/Footer";
 import DotPattern from "../_components/ui/dot-pattern";
 
-// ... existing code ...
-// export const metadata: Metadata = {
-//   title: {
-//     template: "%s | 19mod",
-//     default: "19mod | Designer & Developer",
-//   },
-//   description:
-//     "This is the 19mod portfolio website, showcasing past projects, skills, and experience as a software engineer. A downloadable PDF version of the resume is also available.",
-// };
-// ... existing code ...
 function RootLayout({
   children,
 }: Readonly<{
@@ -44,6 +33,13 @@ function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <title>19mod | Designer & Developer</title>
+        <meta
+          name="description"
+          content="This is the 19mod portfolio website, showcasing past projects, skills, and experience as a software engineer. A downloadable PDF version of the resume is also available."
+        />
+      </head>
       <body
         className={`${inter.className} grid min-h-screen min-w-full grid-rows-[7rem_1fr_6rem] bg-neutral-900 px-36`}
       >

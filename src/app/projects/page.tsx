@@ -1,11 +1,12 @@
-import { Metadata } from 'next';
+import ProjectsContainer from "@/src/features/projects/ProjectsContainer";
+import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: 'projects',
+  title: "projects",
 };
 
 function Page() {
-  return <div>PROJECTS</div>;
+  return <ProjectsContainer />;
 }
 
 export default Page;
