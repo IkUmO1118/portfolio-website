@@ -1,10 +1,10 @@
 import { LiaDownloadSolid } from "react-icons/lia";
 import { robotoCondensed, sourceSans } from "./layout";
 import Button from "../_components/Button";
-import SelectedProjectCard from "../_components/SelectedProjectCard";
 import ExportedImage from "next-image-export-optimizer";
 import mainImg from "@/public/img/favicon.png";
-import data from "@/public/portfolio.json";
+// import data from "@/public/portfolio.json";
+import SelectedProjects from "../_components/SelectedProjects";
 
 function Page() {
   return (
@@ -13,6 +13,7 @@ function Page() {
         <ExportedImage
           src={mainImg}
           alt="main image"
+          unoptimized={true}
           className="z-10 h-28 w-28 rounded-full"
         />
         <h1
@@ -38,11 +39,7 @@ function Page() {
           Selected Projects
         </h2>
         <div className="flex w-full flex-col gap-8">
-          {data
-            .filter((project) => project.selected)
-            .map((project) => (
-              <SelectedProjectCard project={project} key={project.id} />
-            ))}
+          <SelectedProjects />
         </div>
       </section>
     </div>

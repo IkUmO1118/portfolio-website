@@ -1,3 +1,4 @@
+"use client";
 import {
   BiLogoJava,
   BiLogoJavascript,
@@ -11,18 +12,26 @@ import { FaLaravel, FaPython } from "react-icons/fa";
 import { SiPhp } from "react-icons/si";
 import { GrMysql } from "react-icons/gr";
 const iconMap = {
-  react: <BiLogoReact className="h-9 w-9 text-neutral-50" />,
-  nextjs: <RiNextjsFill className="h-9 w-9 text-neutral-50" />,
-  javascript: <BiLogoJavascript className="h-9 w-9 text-neutral-50" />,
-  typescript: <BiLogoTypescript className="h-9 w-9 text-neutral-50" />,
-  tailwindcss: <BiLogoTailwindCss className="h-9 w-9 text-neutral-50" />,
-  java: <BiLogoJava className="h-9 w-9 text-neutral-50" />,
-  python: <FaPython className="h-9 w-9 text-neutral-50" />,
-  php: <SiPhp className="h-9 w-9 text-neutral-50" />,
-  laravel: <FaLaravel className="h-9 w-9 text-neutral-50" />,
-  mysql: <GrMysql className="h-9 w-9 text-neutral-50" />,
-  mongodb: <BiLogoMongodb className="h-9 w-9 text-neutral-50" />,
-  supabase: <RiSupabaseFill className="h-9 w-9 text-neutral-50" />,
+  react: <BiLogoReact className="h-9 w-9 text-neutral-50" key="react" />,
+  nextjs: <RiNextjsFill className="h-9 w-9 text-neutral-50" key="nextjs" />,
+  javascript: (
+    <BiLogoJavascript className="h-9 w-9 text-neutral-50" key="javascript" />
+  ),
+  typescript: (
+    <BiLogoTypescript className="h-9 w-9 text-neutral-50" key="typescript" />
+  ),
+  tailwindcss: (
+    <BiLogoTailwindCss className="h-9 w-9 text-neutral-50" key="tailwindcss" />
+  ),
+  java: <BiLogoJava className="h-9 w-9 text-neutral-50" key="java" />,
+  python: <FaPython className="h-9 w-9 text-neutral-50" key="python" />,
+  php: <SiPhp className="h-9 w-9 text-neutral-50" key="php" />,
+  laravel: <FaLaravel className="h-9 w-9 text-neutral-50" key="laravel" />,
+  mysql: <GrMysql className="h-9 w-9 text-neutral-50" key="mysql" />,
+  mongodb: <BiLogoMongodb className="h-9 w-9 text-neutral-50" key="mongodb" />,
+  supabase: (
+    <RiSupabaseFill className="h-9 w-9 text-neutral-50" key="supabase" />
+  ),
 };
 
 import ExportedImage from "next-image-export-optimizer";
@@ -32,7 +41,7 @@ import { ProjectProps } from "../utils/helper";
 
 type Skill = keyof typeof iconMap;
 
-function SelectedProjectCard({ project }: ProjectProps) {
+function SelectedProjectCard({ project }: { project: ProjectProps }) {
   return (
     <div className="z-10 h-96 w-full border border-neutral-700 bg-neutral-900">
       {project.id % 2 !== 0 ? (
@@ -41,6 +50,8 @@ function SelectedProjectCard({ project }: ProjectProps) {
             <ExportedImage
               src={project.thumbnail}
               fill
+              sizes="100vw"
+              unoptimized={true}
               alt={project.summary}
               className="border-x border-t border-neutral-800 object-cover object-top opacity-80"
             />
@@ -96,6 +107,7 @@ function SelectedProjectCard({ project }: ProjectProps) {
             <ExportedImage
               src={project.thumbnail}
               fill
+              unoptimized={true}
               alt={project.summary}
               className="border-x border-t border-neutral-800 object-cover object-top opacity-80"
             />

@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+// import type { Metadata } from "next";
 import {
   Inter,
   Roboto_Condensed,
@@ -22,20 +22,21 @@ const inter = Inter({
   display: "swap",
 });
 
-import "./../_style/globals.css";
+import "./../style/globals.css";
 import Header from "../_components/Header";
 import Footer from "../_components/Footer";
-import DotPattern from "../components/ui/dot-pattern";
+import DotPattern from "../_components/ui/dot-pattern";
 
-export const metadata: Metadata = {
-  title: {
-    template: "%s | 19mod",
-    default: "19mod | Designer & Developer",
-  },
-  description:
-    "This is the 19mod portfolio website, showcasing past projects, skills, and experience as a software engineer. A downloadable PDF version of the resume is also available.",
-};
-
+// ... existing code ...
+// export const metadata: Metadata = {
+//   title: {
+//     template: "%s | 19mod",
+//     default: "19mod | Designer & Developer",
+//   },
+//   description:
+//     "This is the 19mod portfolio website, showcasing past projects, skills, and experience as a software engineer. A downloadable PDF version of the resume is also available.",
+// };
+// ... existing code ...
 function RootLayout({
   children,
 }: Readonly<{

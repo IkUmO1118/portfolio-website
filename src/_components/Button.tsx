@@ -8,7 +8,7 @@ interface ButtonProps {
 function Button({ children, className }: ButtonProps) {
   return (
     <button
-      className={`${className} z-10 w-max border border-neutral-700 bg-neutral-900`}
+      className={`${className} z-10 w-max border border-neutral-700 bg-neutral-900 decoration-neutral-500 hover:underline`}
     >
       <div className="flex items-center gap-3 bg-neutral-800/20 px-8 py-5">
         {children}

@@ -8,7 +8,7 @@
     "thumbnail": "/img/tipi.png",
     "skillStack": ["react", "tailwindcss", "typescript", "supabase"],
     "selected": true,
-    "date": "2024-07-16T00:00:00"
+    "createdAt": "2024/10/30"
   },
   {
     "id": 2,
@@ -19,7 +19,7 @@
     "thumbnail": "/img/1rm.png",
     "skillStack": ["react", "tailwindcss", "mongodb"],
     "selected": true,
-    "date": "2023-07-16T00:00:00"
+    "createdAt": "2024/02/24"
   },
   {
     "id": 3,
@@ -30,7 +30,7 @@
     "thumbnail": "/img/the-wild-oasis.png",
     "skillStack": ["nextjs", "tailwindcss", "supabase"],
     "selected": true,
-    "date": "2023-07-16T00:00:00"
+    "createdAt": "2024/6/12"
   },
   {
     "id": 4,
@@ -41,6 +41,6 @@
     "thumbnail": "/img/portfolio.png",
     "skillStack": ["nextjs", "tailwindcss", "typescript"],
     "selected": true,
-    "date": "2023-07-16T00:00:00"
+    "createdAt": "2024/10/08"
   }
 ]
