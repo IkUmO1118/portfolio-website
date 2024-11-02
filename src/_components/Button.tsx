@@ -9,7 +9,7 @@ interface ButtonProps {
 function Button({ children, className, href }: ButtonProps) {
   return (
     <a
-      className={`${className} z-10 w-max cursor-pointer border border-neutral-700/80 bg-neutral-900 decoration-neutral-500 hover:underline`}
+      className={`${className} z-10 w-max cursor-default border border-neutral-700/80 bg-neutral-900 decoration-neutral-500 hover:underline`}
       href={href}
       target="_blank"
       rel="noopener noreferrer"
