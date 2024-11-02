@@ -12,7 +12,7 @@ function AboutContents() {
       </AboutCard>
       <AboutCard
         type="Frontend"
-        skills={["Next.js", "Tailwind&ensp;CSS", "TypeScript"]}
+        skills={["Next.js", "Tailwind CSS", "TypeScript"]}
       >
         <FaLaptopCode className="h-7 w-7 justify-self-center text-neutral-400" />
       </AboutCard>

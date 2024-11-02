@@ -9,11 +9,13 @@ function Header() {
         <Link href="/about" className="z-10 text-xs text-neutral-400">
           Ikumo Takahashi
         </Link>
-        <button
-          className={`${robotoCondensed.className} z-10 flex h-12 w-24 items-center justify-center rounded-full bg-neutral-800 text-xs text-neutral-100 hover:underline`}
+        <a
+          className={`${robotoCondensed.className} z-10 flex h-12 w-24 cursor-pointer items-center justify-center rounded-full bg-neutral-800 text-xs text-neutral-100 hover:underline`}
+          href="/files/test-resume.pdf"
+          target="_blank"
         >
           CV
-        </button>
+        </a>
       </div>
       <NavLink />
     </header>

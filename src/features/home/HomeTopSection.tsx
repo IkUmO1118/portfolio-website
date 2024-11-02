@@ -22,7 +22,7 @@ function TopSection() {
         <br />
         with&#160;&#123;programming&#125;
       </h1>
-      <Button className="mt-14" href="/">
+      <Button className="mt-14" href="/files/test-resume.pdf">
         <p className={`${robotoCondensed.className} text-sm text-neutral-400`}>
           Download CV
         </p>
