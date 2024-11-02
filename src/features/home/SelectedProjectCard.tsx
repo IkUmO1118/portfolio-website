@@ -39,7 +39,7 @@ import { robotoCondensed, robotoSlab } from "../../app/layout";
 import Button from "../../_components/Button";
 import { ProjectProps } from "../../utils/helper";
 
-type Skill = keyof typeof iconMap;
+export type Skill = keyof typeof iconMap;
 
 function SelectedProjectCard({ project }: { project: ProjectProps }) {
   const isOdd: boolean = project.id % 2 === 0;

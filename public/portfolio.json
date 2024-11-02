@@ -49,7 +49,7 @@
     "summary": "The Online Chat Messenger allows users to easily connect and communicate with each other via UDP and TCP protocols. Custom chat rooms can also be created.",
     "description": "This 'Online Chat Messenger' project aims to build a real-time, data-first chat application and to develop an understanding of basic server operation and client-server architecture. Step by step, the client connects to the server via UDP through the CLI, starting with a simple system where messages are relayed, progressing to the creation of dedicated chat rooms and sending and receiving messages with token authentication.Translated with DeepL.com (free version)",
     "githubURL": "https://github.com/IkUmO1118/recursion-cs/tree/main/backend-project-2/online-chat-messenger",
-    "thumbnail": "/img/the-wild-oasis.png",
+    "thumbnail": "/img/terminal-app.png",
     "skillStack": ["python"],
     "selected": false,
     "createdAt": "2024/9/14"
