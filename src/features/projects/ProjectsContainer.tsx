@@ -73,7 +73,11 @@ function ProjectsContainer() {
                 alt={project.summary}
                 className="object-cover object-top opacity-95 transition-all duration-150"
               />
-              <div className="absolute left-0 top-0 z-10 flex h-full w-full flex-col justify-between px-3 pb-5 pt-2 text-neutral-100 opacity-0 transition-all duration-300 hover:bg-neutral-900/60 hover:opacity-100">
+              <a
+                className="absolute left-0 top-0 z-10 flex h-full w-full cursor-pointer flex-col justify-between px-3 pb-5 pt-2 text-neutral-100 opacity-0 transition-all duration-300 hover:bg-neutral-900/60 hover:opacity-100"
+                href={project.githubURL}
+                target="_blank"
+              >
                 <div className="flex flex-col gap-1">
                   <h3 className={`${robotoSlab.className} text-2xl font-bold`}>
                     {project.title}
@@ -83,7 +87,7 @@ function ProjectsContainer() {
                   </div>
                 </div>
                 <p className="text-sm">{project.summary}</p>
-              </div>
+              </a>
             </div>
           </div>
         ))}
